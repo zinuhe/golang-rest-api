@@ -50,8 +50,8 @@ func main() {
   //End-Points
   router.HandleFunc("/people", GetPeople).Methods("GET")
   router.HandleFunc("/people/{id}", GetPerson).Methods("GET")
-  router.HandleFunc("/people{id}", AddPerson).Methods("POST")
-  router.HandleFunc("/people{id}", DeletePerson).Methods("DELETE")
+  router.HandleFunc("/people/{id}", AddPerson).Methods("POST")
+  router.HandleFunc("/people/{id}", DeletePerson).Methods("DELETE")
 
   //Star web server and log
   //log.Fatal(http.ListenAndServe(":3000", router))

@@ -1,4 +1,4 @@
-# Go Simple Rest API 
+# Simple Rest API in Golang 
 Using Gorilla Mux
 
 https://github.com/gorilla/mux

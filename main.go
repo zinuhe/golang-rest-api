@@ -1,4 +1,5 @@
 // https://tutorialedge.net/golang/creating-restful-api-with-golang/
+// https://tutorialedge.net/golang/creating-simple-web-server-with-golang/
 // go mod init github.com/gorilla/mux
 // go run main.go
 

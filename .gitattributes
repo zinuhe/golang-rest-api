@@ -1,2 +1,2 @@
-#*.html linguist-detectable=false
-Docker linguist-detectable=false
+# *.html linguist-detectable=false
+Dockerfile linguist-detectable=false

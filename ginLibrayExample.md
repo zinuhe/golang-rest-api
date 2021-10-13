@@ -1,9 +1,10 @@
 https://golang.org/doc/tutorial/web-service-gin
 
--create the module
--run go get .
+- create the module ```go mod init example/web-service-gin```
+- run ```go get .```
 
 -----------------------------------------------------------------------------------------------------
+```go
 package main
 
 import (
@@ -71,18 +72,22 @@ func postAlbums(c *gin.Context) {
 	albums = append(albums, newAlbum)
 	c.IndentedJSON(http.StatusCreated, newAlbum)
 }
-
+```
 -----------------------------------------------------------------------------------------------------
 
 To test it
+```
 curl http://localhost:8080/albums \
     --header "Content-Type: \
     application/json" --request \
     "GET"
+```
 
-
+```
 curl http://localhost:8080/albums/2
+```
 
+```
 curl http://localhost:8080/albums \
     --include --header \
     "Content-Type: \
@@ -91,3 +96,4 @@ curl http://localhost:8080/albums \
     "4","title": "The Modern Sound \
     of Betty Carter","artist": \
     "Betty Carter","price": 49.99}'
+```
